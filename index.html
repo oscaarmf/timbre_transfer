@@ -2,11 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ejemplos de Audio</title>
+  <title>Ejemplos de conversión</title>
   <style>
     body {
       font-family: sans-serif;
-      max-width: 700px;
+      max-width: 1100px;
       margin: 40px auto;
       padding: 20px;
     }
@@ -14,36 +14,288 @@
       text-align: center;
     }
     .audio-block {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       width: 48%;
     }
     .audio-row {
       display: flex;
       justify-content: space-between;
       gap: 4%;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
+    h3 {
+  border-bottom: 2px solid #b3b3e6;
+  padding-bottom: 4px;
+}
+
   </style>
 </head>
 <body>
   <h1>Ejemplos de Conversión</h1>
-  <div>
+  <div style="margin-top: 50px;">
     <h2>Conversiones con VAE-GAN</h2>
-    <p>Estos ejemplos muestran la conversión de audio utilizando un modelo VAE-GAN. Escucha el audio original y el generado para comparar.</p>
+    <p>Estos ejemplos muestran la conversión de audio utilizando el modelo VAE-GAN.</p>
     <div>
-      Voz a violín
+      <h3>Dominio Voz Cantada - Violín</h3>
       <div class="audio-row">
         <div class="audio-block">
-          <h3>Audio original</h3>
+          <h4>Audio original (voz femenina)</h4>
           <audio controls>
             <source src="audios/originales/f1_scales_belt_i.wav" type="audio/wav">
             Tu navegador no soporta audio.
           </audio>
         </div>
         <div class="audio-block">
-          <h3>Audio generado</h3>
+          <h4>Audio convertido a violín</h4>
           <audio controls>
             <source src="audios/convertidos/vae_gan/exp1/G2_f1_scales_belt_i_mel.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (voz masculina)</h4>
+          <audio controls>
+            <source src="audios/originales/m1_arpeggios_belt_o.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a violín</h4>
+          <audio controls>
+            <source src="audios/convertidos/vae_gan/exp1/G2_m1_arpeggios_belt_o_mel.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (voz masculina)</h4>
+          <audio controls>
+            <source src="audios/originales/m1_arpeggios_belt_a.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz femenina</h4>
+          <audio controls>
+            <source src="audios/convertidos/vae_gan/exp3/G2_m1_arpeggios_belt_a_mel.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (voz femenina)</h4>
+          <audio controls>
+            <source src="audios/originales/f1_arpeggios_c_slow_piano_u.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz masculina</h4>
+          <audio controls>
+            <source src="audios/convertidos/vae_gan/exp3/G1_f1_arpeggios_c_slow_piano_u_mel.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (violín)</h4>
+          <audio controls>
+            <source src="audios/originales/AuSep_1_vn_36_Rondeau_seg.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz (general)</h4>
+          <audio controls>
+            <source src="audios/convertidos/vae_gan/exp1/G1_AuSep_1_vn_36_Rondeau_seg.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (violín)</h4>
+          <audio controls>
+            <source src="audios/originales/AuSep_2_vn_36_Rondeau_seg.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz masculina</h4>
+          <audio controls>
+            <source src="audios/convertidos/vae_gan/exp3/G1_AuSep_2_vn_36_Rondeau_seg.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz femenina</h4>
+          <audio controls>
+            <source src="audios/convertidos/vae_gan/exp3/G2_AuSep_2_vn_36_Rondeau_seg.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>Dominio Voz Hablada</h3>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (f7794)</h4>
+          <audio controls>
+            <source src="audios/originales/7794-295947-0004.flac" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a m3436</h4>
+          <audio controls>
+            <source src="audios/convertidos/vae_gan/exp4/G1_7794-295947-0004_mel.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (m3436)</h4>
+          <audio controls>
+            <source src="audios/originales/3436-172162-0004.flac" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a f7794</h4>
+          <audio controls>
+            <source src="audios/convertidos/vae_gan/exp4/G2_3436-172162-0004_mel.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top: 50px;">
+    <h2>Conversiones con AUTOVC</h2>
+    <p>Estos ejemplos muestran la conversión de audio utilizando el modelo AUTOVC.</p>
+    <div>
+      <h3>Dominio Voz Cantada - Violín</h3>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (voz femenina)</h4>
+          <audio controls>
+            <source src="audios/originales/f1_arpeggios_c_fast_piano_e.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz masculina</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp3/g_m2_f1_arpeggios_c_fast_piano_e.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a violín</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp3/g_violin_f1_arpeggios_c_fast_piano_e.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (voz masculina)</h4>
+          <audio controls>
+            <source src="audios/originales/m1_scales_belt_o.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz femenina</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp3/g_f1_m1_scales_belt_o.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+                <div class="audio-block">
+          <h4>Audio convertido a violín</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp3/g_violin_m1_scales_belt_o.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (violín)</h4>
+          <audio controls>
+            <source src="audios/originales/AuSep_1_vn_38_Jerusalem_seg.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz femenina</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp3/g_f1_AuSep_1_vn_38_Jerusalem_seg.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a voz masculina</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp3/g_m1_AuSep_1_vn_38_Jerusalem_seg.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>Dominio Voz Hablada</h3>
+      <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (f7794)</h4>
+          <audio controls>
+            <source src="audios/originales/7794-295947-0042.flac" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block"> 
+          <h4>Audio convertido a f2196</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp2/g_f2196_7794-295947-0042.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a m196</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp2/g_m196_7794-295947-0042.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+      </div>
+            <div class="audio-row">
+        <div class="audio-block">
+          <h4>Audio original (m3436)</h4>
+          <audio controls>
+            <source src="audios/originales/3436-172162-0004.flac" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a m196</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp2/g_m196_3436-172162-0004.wav" type="audio/wav">
+            Tu navegador no soporta audio.
+          </audio>
+        </div>
+        <div class="audio-block">
+          <h4>Audio convertido a f7794</h4>
+          <audio controls>
+            <source src="audios/convertidos/autovc/exp2/g_f7794_3436-172162-0004.wav" type="audio/wav">
             Tu navegador no soporta audio.
           </audio>
         </div>
