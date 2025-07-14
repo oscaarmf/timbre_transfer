@@ -27,4 +27,4 @@ Aunque se incluye el código fuente de cada modelo, durante el desarrollo del pr
 ## Ejemplos de audio
 
 - [Audio original](audios/originales/f1_scales_belt_i.wav)
-- [Audio generado](audios/convertidos/exp1/)
+- [Audio generado](audios/convertidos/exp1/G2_f1_scales_belt_i_mel.wav)
