@@ -24,6 +24,8 @@ Además, se incluyen los siguientes archivos:
 
 Aunque se incluye el código fuente de cada modelo, durante el desarrollo del proyecto se hizo uso de Jupyter Notebooks para facilitar la experimentación y visualización de resultados. Los Notebooks se encuentran en las carpetas correspondientes a cada modelo. En estos, se redefinieron gran parte de las funciones del código fuente para adaptarlas a la ejecución en Notebooks, permitiendo así una mejor interacción.
 
-## Ejemplos de audio
+# Ejemplos de conversión
 
-- [Ejemplos](https://oscaarmf.github.io/timbre_transfer/)
+En el siguiente enlace se pueden encontrar ejemplos de la conversión de audios utilizando los modelos entrenados: [Ejemplos de Conversión](https://oscaarmf.github.io/timbre_transfer/)
+
+
